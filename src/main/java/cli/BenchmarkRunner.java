@@ -38,8 +38,7 @@ public class BenchmarkRunner {
                     if ("heap".equalsIgnoreCase(algo)) {
                         HeapSort.sort(a, m);
                     } else {
-                        // Default to heap; extend here for other algos
-                        HeapSort.sort(a, m);
+                        HeapSort.sort(a, m);  // Default to heap; extend here for other algos
                     }
                     long t1 = System.nanoTime();
                     long ms = (t1 - t0) / 1_000_000L;
